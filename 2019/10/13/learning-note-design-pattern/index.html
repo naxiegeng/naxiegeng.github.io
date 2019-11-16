@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>模式设计 | 那些梗</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="一直非常认同《精益创业》中build-measure-learn的思想，认为做一件事就是要这样去尝试，评估效果，从中学习成长然后再开始下一个循环，如此循环往复滚雪球式的成长。但是我从来没有想过，无论是一个人是需要能量去驱动的，是会疲劳的。那么又是什么可以让一个人长期充满能量呢？今天早上有幸听了梁宁老师的课，从中获益匪浅。 梁宁老师提出了四种连接的概念，其中有正向作用的有两种：  因果链：因为-所以">
+<meta name="keywords" content="思考,学习笔记">
+<meta property="og:type" content="article">
+<meta property="og:title" content="模式设计">
+<meta property="og:url" content="https://naxiegeng.github.io/2019/10/13/learning-note-design-pattern/index.html">
+<meta property="og:site_name" content="那些梗">
+<meta property="og:description" content="一直非常认同《精益创业》中build-measure-learn的思想，认为做一件事就是要这样去尝试，评估效果，从中学习成长然后再开始下一个循环，如此循环往复滚雪球式的成长。但是我从来没有想过，无论是一个人是需要能量去驱动的，是会疲劳的。那么又是什么可以让一个人长期充满能量呢？今天早上有幸听了梁宁老师的课，从中获益匪浅。 梁宁老师提出了四种连接的概念，其中有正向作用的有两种：  因果链：因为-所以">
+<meta property="og:locale" content="zh-cn">
+<meta property="og:image" content="https://img.qingchengfit.cn/9421c822b2d7ba5fd33db87d7af8eaed.jpeg!middle">
+<meta property="og:updated_time" content="2019-11-16T03:44:39.823Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="模式设计">
+<meta name="twitter:description" content="一直非常认同《精益创业》中build-measure-learn的思想，认为做一件事就是要这样去尝试，评估效果，从中学习成长然后再开始下一个循环，如此循环往复滚雪球式的成长。但是我从来没有想过，无论是一个人是需要能量去驱动的，是会疲劳的。那么又是什么可以让一个人长期充满能量呢？今天早上有幸听了梁宁老师的课，从中获益匪浅。 梁宁老师提出了四种连接的概念，其中有正向作用的有两种：  因果链：因为-所以">
+<meta name="twitter:image" content="https://img.qingchengfit.cn/9421c822b2d7ba5fd33db87d7af8eaed.jpeg!middle">
+  
+    <link rel="alternate" href="/atom.xml" title="那些梗" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">那些梗</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">厕所没纸街坊福利会</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://naxiegeng.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-learning-note-design-pattern" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/10/13/learning-note-design-pattern/" class="article-date">
+  <time datetime="2019-10-13T01:59:28.000Z" itemprop="datePublished">2019-10-13</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      模式设计
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>一直非常认同《精益创业》中build-measure-learn的思想，认为做一件事就是要这样去尝试，评估效果，从中学习成长然后再开始下一个循环，如此循环往复滚雪球式的成长。但是我从来没有想过，无论是一个人是需要能量去驱动的，是会疲劳的。那么又是什么可以让一个人长期充满能量呢？今天早上有幸听了梁宁老师的课，从中获益匪浅。</p>
+<p>梁宁老师提出了<em>四种连接</em>的概念，其中有正向作用的有两种：</p>
+<ul>
+<li>因果链：因为-所以。我做什么事情可以达到什么效果。</li>
+<li>增强回路：系统要稳定运作，就需要持续的动力。有增强回路，就意味着需要持续的外部正反馈，不断为系统增加能量，从而增强因果关系。</li>
+</ul>
+<p>理论上一个人把握了一件事的因果关系，又能不断的获得外部正反馈，那么这件事儿就可以不断推进下去，但是实际上还有两种拖后腿的连接：</p>
+<ul>
+<li>调节回路：节能是生物的本能，人都是懒惰的。</li>
+<li>滞后反馈：人们做了一件事都希望立即看到效果，错也好，对也好，最好能及时反馈，给个痛快。可以反馈基本是滞后的。</li>
+</ul>
+<p>对于减肥这个事情的因果链大家都知道管住嘴迈开腿就可以瘦，不断的从体重下降的满足感，朋友的鼓励的喜悦中就可以活动持续的动力，但是实际上减肥成功的人却非常少。因为人们都是懒惰的，都不喜欢忍受饥饿，而运动&amp;控制饮食带来的效果又是延后的，往往要经过数周甚至数月的努力才可以获得。在这个过程中很多人熬不住了就选择了放弃。</p>
+<p>我个人有过至少5次时长为3个月左右的减肥经历，其中有两次经历还算比较成功。回头想想这两次成功经历的背后都是有着很大的外部激励在不断给我能量，并不是我本身的强大。而几次失败的经历都在调节回路和滞后反馈的地狱陷阱中苦苦挣扎。如果再次决定减肥的话，我会设计一个模式，让我能够更容易获得正反馈，避免调节回路和滞后反馈的负面影响。比如说通过更科学的饮食减少饥饿的痛苦，通过更科学的训练安排获得更短的反馈周期等等。</p>
+<p>最后，对于一个人来说最重要的资源就是一个人的心理能量，拥有强大内心的人才能走出调节回路和滞后反馈的陷阱。战争以一方失去战斗意志为结束，而人生中以一个人失去信心和勇气为终点，愿我心中永远活着一个热血的少年。</p>
+<p><img src="https://img.qingchengfit.cn/9421c822b2d7ba5fd33db87d7af8eaed.jpeg!middle" alt="sun flower"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://naxiegeng.github.io/2019/10/13/learning-note-design-pattern/" data-id="ck31enu8z0004y2kovzpw9mrp" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/学习笔记/">学习笔记</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/思考/">思考</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/11/16/leave_bj/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          越来越喜欢的自己和越来越讨厌的别人
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/08/06/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">那些梗开张</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/学习笔记/">学习笔记</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/思考/">思考</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/学习笔记/" style="font-size: 10px;">学习笔记</a> <a href="/tags/思考/" style="font-size: 10px;">思考</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">十一月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">十月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">八月 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/11/16/9-1-insomnia-writting/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/11/16/leave_bj/">越来越喜欢的自己和越来越讨厌的别人</a>
+          </li>
+        
+          <li>
+            <a href="/2019/10/13/learning-note-design-pattern/">模式设计</a>
+          </li>
+        
+          <li>
+            <a href="/2019/08/06/hello-world/">那些梗开张</a>
+          </li>
+        
+          <li>
+            <a href="/2019/08/06/the-lion-king/">观影心得-狮子王</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 Paper<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
